@@ -1,0 +1,173 @@
+/* ===========================
+   BEYOND HERO
+=========================== */
+.beyond-hero {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.hero-center {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  color: var(--white);
+}
+
+.hero-page-tag {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 14px;
+}
+
+.hero-center h1 {
+  font-size: 64px;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.1;
+}
+
+/* ===========================
+   BEYOND INTRO
+=========================== */
+.beyond-intro {
+  padding: 80px 60px;
+  background: var(--white);
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.beyond-intro-text {
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--text-body);
+  line-height: 1.9;
+  margin-top: -20px;
+}
+
+/* ===========================
+   ROADMAP
+=========================== */
+.beyond-roadmap {
+  padding: 80px 60px;
+  background: var(--bg-soft);
+}
+
+.roadmap {
+  margin-top: 40px;
+  max-width: 680px;
+}
+
+.roadmap-item {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 0;
+}
+
+.roadmap-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.roadmap-number {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--lavender-light), var(--pink-light));
+  color: var(--purple-dark);
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 2px solid var(--lavender-mid);
+}
+
+.roadmap-line {
+  width: 2px;
+  flex: 1;
+  background: linear-gradient(to bottom, var(--lavender-mid), var(--pink-mid));
+  min-height: 60px;
+  margin: 6px 0;
+}
+
+.roadmap-item:last-child .roadmap-line {
+  display: none;
+}
+
+.roadmap-content {
+  padding-bottom: 48px;
+}
+
+.roadmap-content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--purple-dark);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.roadmap-content p {
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--text-body);
+  line-height: 1.9;
+}
+
+/* ===========================
+   MASONRY GALLERY
+=========================== */
+.beyond-gallery {
+  padding: 80px 60px;
+  background: var(--white);
+}
+
+.masonry-grid {
+  columns: 3;
+  column-gap: 16px;
+  margin-top: 40px;
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.masonry-item img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+.masonry-item img:hover {
+  transform: scale(1.03);
+}
